@@ -61,7 +61,7 @@
         .img-zoom-container img { transition: transform 0.7s ease; }
         .img-zoom-container:hover img { transform: scale(1.08); }
     </style>
-    <meta property="og:image" content="섬네일.svg">
+    <meta property="og:image" content="https://viewscreen.githubusercontent.com/view/svg?browser=safari&bypass_fastly=true&color_mode=auto&commit=bfd224c6f8ceb4d6643b376243cdaea644bbf83e&device=unknown_device&docs_host=https%3A%2F%2Fdocs.github.com&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f737465726e68796f6d696e2d7375646f2f4544432f626664323234633666386365623464363634336233373632343363646165613634346262663833652fe18489e185a5e186b7e18482e185a6e1848be185b5e186af2e737667&link_underline_enabled=true&logged_in=true&nwo=sternhyomin-sudo%2FEDC&path=%E1%84%89%E1%85%A5%E1%86%B7%E1%84%82%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF.svg&platform=mac&repository_id=1247672382&repository_type=Repository&version=26#57646413-d2d0-43f1-a695-77d1ad9536c6">
     <meta property="og:description" content="202610146 김효민">
 
 </head>
@@ -226,19 +226,50 @@
                     <div class="absolute inset-0 bg-gradient-to-tr from-blue-100/80 to-cyan-50/80 rounded-[3rem] transform -rotate-3 z-0 scale-105 hidden sm:block mt-8"></div>
                     
                     <div class="flex flex-col gap-3 sm:gap-4 h-full relative z-10">
+                        <!-- 상단 두 장의 사진 (2x2 그리드 상단) -->
+                        <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                            <div class="h-40 sm:h-56 img-zoom-container rounded-3xl shadow-xl border-4 border-white bg-white relative group cursor-pointer">
+                                <img src="https://www.sje.go.kr/upload/openedu/na/bbs_1051/2023/08/CA8B1853-E48D-FC82-A2F6-55BCBE3121FD.jpg" alt="세종교육 시민포럼" class="w-full h-full object-cover rounded-[20px]">
+                                
+                                <!-- 호버 시 어두워지며 나타나는 오버레이 (설명 영역) -->
+                                <div class="absolute inset-0 bg-slate-900/75 rounded-[20px] flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 p-3 sm:p-4 z-20">
+                                    <h4 class="text-white font-black text-sm sm:text-lg mb-1 sm:mb-2 drop-shadow-lg text-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">세종마을교육연구소</h4>
+                                    <p class="text-blue-100 text-[10px] sm:text-xs text-center leading-relaxed break-keep font-medium transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500 delay-75 line-clamp-3 sm:line-clamp-none">
+                                        2023년과 2024년 포럼에서 세종교육혁신 제안 등에 대하여 발표하고, 교육공동체와 함께 숙의토론했습니다.
+                                    </p>
+                                </div>
+
+                                <div class="absolute bottom-3 left-3 bg-white/60 backdrop-blur-md px-2.5 py-1.5 rounded-lg text-[10px] sm:text-xs font-bold text-slate-800 shadow-sm border border-slate-100 break-keep leading-tight transition-opacity duration-300 group-hover:opacity-0 z-10">세종교육 시민포럼</div>
+                            </div>
+                            
+                            <div class="h-40 sm:h-56 img-zoom-container rounded-3xl shadow-xl border-4 border-white bg-white relative group cursor-pointer">
+                                <img src="https://github.com/sternhyomin-sudo/EDC/blob/main/%E1%84%89%E1%85%B5%E1%84%86%E1%85%B5%E1%86%AB%E1%84%91%E1%85%A2%E1%84%82%E1%85%A5%E1%86%AF%E1%84%83%E1%85%A1%E1%86%AB.jpg?raw=true" alt="주민발안조례 시민패널단" class="w-full h-full object-cover rounded-[20px]">
+                                
+                                <!-- 호버 시 어두워지며 나타나는 오버레이 (설명 영역) -->
+                                <div class="absolute inset-0 bg-slate-900/75 rounded-[20px] flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 p-3 sm:p-4 z-20">
+                                    <h4 class="text-white font-black text-sm sm:text-lg mb-1 sm:mb-2 drop-shadow-lg text-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">새로운학교세종네트워크</h4>
+                                    <p class="text-blue-100 text-[10px] sm:text-xs text-center leading-relaxed break-keep font-medium transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500 delay-75 line-clamp-3 sm:line-clamp-none">
+                                        교육활동 보호 조례 주민발안 제정 과정에서 시민패널단으로서, 숙의하며 제안하는 등 제정에 기여했습니다.
+                                    </p>
+                                </div>
+
+                                <div class="absolute bottom-3 left-3 bg-white/60 backdrop-blur-md px-2.5 py-1.5 rounded-lg text-[10px] sm:text-xs font-bold text-slate-800 shadow-sm border border-slate-100 break-keep leading-tight transition-opacity duration-300 group-hover:opacity-0 z-10">주민발안조례 시민패널단</div>
+                            </div>
+                        </div>
+                        
                         <!-- 상단 메인 사진 -->
                         <div class="w-full h-56 sm:h-72 img-zoom-container rounded-3xl shadow-xl border-4 border-white bg-white relative group cursor-pointer">
-                            <img src="https://www.sje.go.kr/upload/openedu/na/bbs_1051/2023/08/CA8B1853-E48D-FC82-A2F6-55BCBE3121FD.jpg" alt="세종교육 시민포럼" class="w-full h-full object-cover rounded-[20px]">
+                            <img src="https://github.com/sternhyomin-sudo/EDC/blob/main/%E1%84%89%E1%85%A6%E1%84%8C%E1%85%A9%E1%86%BC%E1%84%80%E1%85%AD%E1%84%8B%E1%85%B2%E1%86%A8%20100%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%83%E1%85%A2%E1%84%90%E1%85%A9%E1%84%85%E1%85%A9%E1%86%AB%E1%84%92%E1%85%AC%20%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD.jpg?raw=true" alt="세종교육 대토론회" class="w-full h-full object-cover rounded-[20px]">
                             
                             <!-- 호버 시 어두워지며 나타나는 오버레이 (설명 영역) -->
                             <div class="absolute inset-0 bg-slate-900/75 rounded-[20px] flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 p-4 md:p-6 z-20">
-                                <h4 class="text-white font-black text-xl sm:text-2xl mb-2 drop-shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">세종마을교육연구소</h4>
+                                <h4 class="text-white font-black text-xl sm:text-2xl mb-2 drop-shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">세종특별자치시교육청</h4>
                                 <p class="text-blue-100 text-xs sm:text-sm text-center leading-relaxed break-keep font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
-                                    2023년과 2024년 세종교육 시민포럼에 참여하여 세종교육혁신 제안 등에 대하여 발표하고, 교육공동체와 함께 숙의토론했습니다.
+                                    2022년부터 2025년까지 세종교육 대토론회에 지속참여하여 학생자치와 학생인권 등에 관해 제안하고 토론했습니다.
                                 </p>
                             </div>
 
-                            <div class="absolute bottom-3 left-3 bg-white/60 backdrop-blur-md px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold text-slate-800 shadow-sm border border-slate-100 transition-opacity duration-300 group-hover:opacity-0 z-10">세종교육 시민포럼</div>
+                            <div class="absolute bottom-3 left-3 bg-white/60 backdrop-blur-md px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold text-slate-800 shadow-sm border border-slate-100 transition-opacity duration-300 group-hover:opacity-0 z-10">세종교육 대토론회</div>
                         </div>
                         
                         <!-- 하단 두 장의 사진 -->
@@ -250,7 +281,7 @@
                                 <div class="absolute inset-0 bg-slate-900/75 rounded-[20px] flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 p-3 sm:p-4 z-20">
                                     <h4 class="text-white font-black text-sm sm:text-lg mb-1 sm:mb-2 drop-shadow-lg text-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">세종특별자치시교육청</h4>
                                     <p class="text-blue-100 text-[10px] sm:text-xs text-center leading-relaxed break-keep font-medium transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500 delay-75 line-clamp-3 sm:line-clamp-none">
-                                        세종시교육청 최초의 학생 주민참여예산위원으로서 부위원장을 맡아 세종교육예산의 민주성과 투명성에 기여했습니다.
+                                        세종시교육청 최초의 학생 주참위원으로서 부위원장을 맡아 세종교육예산의 민주성과 투명성에 기여했습니다.
                                     </p>
                                 </div>
 
@@ -263,7 +294,7 @@
                                 <div class="absolute inset-0 bg-slate-900/75 rounded-[20px] flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 p-3 sm:p-4 z-20">
                                     <h4 class="text-white font-black text-sm sm:text-lg mb-1 sm:mb-2 drop-shadow-lg text-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">세종특별자치시교육청</h4>
                                     <p class="text-blue-100 text-[10px] sm:text-xs text-center leading-relaxed break-keep font-medium transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500 delay-75 line-clamp-3 sm:line-clamp-none">
-                                        세종시교육청 건강한 교육공동체 회복 방안 모색을 위한 교육활동 보호 숙의 토론회에 참여하여 학생을 대변했습니다.
+                                        건강한 교육공동체 회복 방안 모색을 위한 교육활동 보호 숙의 토론회에 참여하여 학생을 대변했습니다.
                                     </p>
                                 </div>
 
